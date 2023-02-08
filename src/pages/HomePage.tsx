@@ -35,6 +35,8 @@ export function HomePage() {
   /**
    * 로딩중인 경우에는 이렇게 isLoading 프로퍼티를 통해서 에러를 막을 수 있다.
    * 아래의 에러 부분도 마찬가지로 처리할 수 있다.
+   *
+   * isLoading과 isFetching의 차이는 isLoading의 경우는 요청은 보냈으나 캐시된 데이터가 존재하지 않을 때를 나타내고 isFetching의 경우는 요청을 보냈는지에 대한 여부를 나타낸다.
    */
   if (isLoading) {
     return (
